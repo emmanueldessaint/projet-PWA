@@ -8,6 +8,9 @@ import { style } from '@mui/system';
 import Link from 'next/link'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import localFont from '@next/font/local';
+
+const titleFont = localFont({ src: '../public/fonts/enchanted_land-webfont.woff' })
 
 export default function Home() {
   return (
@@ -24,7 +27,7 @@ export default function Home() {
       <Grid container>
         <div className={styles.menuMobile}>
           <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
-          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw' }}>
+          <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
             <span><Link href="/">Accueil</Link></span>
             <span><Link href="/programme">Programme</Link></span>
             <span><Link href="/plan-du-site">Plan du site</Link></span>
@@ -33,8 +36,8 @@ export default function Home() {
         </div>
         <Grid className={styles.menuPC} item md={4} xs={0}>
           <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
-            <img src="logoBlanc.png" width={'100px'} height={'100px'}/>
             <div style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
+              <span style={{ marginBottom: -35, fontWeight: 500, fontSize: 25, textAlign: 'end', marginRight: -40 }}><img src="/logoBlanc.png" style={{ width: '150px' }} /></span>
               <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Première édition</span>
               <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
               <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
@@ -69,7 +72,7 @@ export default function Home() {
                 <div>
                   <div style={{ display: 'flex' }}>
                     <img src="/parcExpo.jpg" width="60px" height="60px" style={{ borderRadius: 10 }} />
-                    <h2 style={{ color: 'white', marginLeft: 20 }}>Première édition</h2>
+                    <h2 className={titleFont.className} style={{ color: 'white', marginLeft: 20, fontSize: 28, letterSpacing: 2 }}>Première édition</h2>
                   </div>
                   <p style={{ color: 'white', lineHeight: '160%' }}>RPGaming est présent cette année au parc des expositions à Rouen. Cette année retrouvez nous les samedi 21 et dimanche 22 janvier. </p>
                 </div>
@@ -85,9 +88,9 @@ export default function Home() {
               <Grid item xs={12} lg={6}>
                 <div style={{ background: '' }}>
                   <div>
-                    <h2 style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>8 tables de jeux plus une ludothèque</h2>
+                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>8 tables de jeux plus une ludothèque</h2>
                   </div>
-                  <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontFamily: "font", fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>Une ludothèque et des espaces thématiques seront à votre disposition pour permettre de jouer une ou plusieurs parties de vos jeux favoris ou de pépites encore inconnues (Zombicide, Saboteur, Dungeons & Dragons, Civis, et pleins d’autres…)</p>
+                  <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>Une ludothèque et des espaces thématiques seront à votre disposition pour permettre de jouer une ou plusieurs parties de vos jeux favoris ou de pépites encore inconnues (Zombicide, Saboteur, Dungeons & Dragons, Civis, et pleins d’autres…)</p>
                 </div>
               </Grid>
             </Grid>
@@ -95,9 +98,9 @@ export default function Home() {
               <Grid item xs={12} lg={6}>
                 <div style={{ background: '' }}>
                   <div>
-                    <h2 style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>De nombreux exposants présent sur place</h2>
+                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>De nombreux exposants présents sur place</h2>
                   </div>
-                  <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontFamily: "font", fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>De nombreux exposants seront présents pour présenter leurs produits et services (dans la limite des stocks disponibles). Différentes conférences auront lieu durant toute la durée de l’événement et des ateliers inviteront petits et grands à créer leur premier jeu de rôle.</p>
+                  <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>De nombreux exposants seront présents pour présenter leurs produits et services (dans la limite des stocks disponibles). Différentes conférences auront lieu durant toute la durée de l’événement et des ateliers inviteront petits et grands à créer leur premier jeu de rôle.</p>
                 </div>
               </Grid>
               <Grid item xs={12} lg={6}>

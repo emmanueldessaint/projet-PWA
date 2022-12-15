@@ -4,9 +4,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "NEXT PWA",
-    "short_name": "PWA",
-    "description": "cool app",
+    "name": "RPGaming Fest",
+    "short_name": "RPGaming",
+    "description": "RPGaming Fest",
     "icons": [
         {
             "src": "/icon-192x192.png",

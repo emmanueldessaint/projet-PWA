@@ -18,16 +18,20 @@ export default function Programme() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Grid container>
-                <Grid item xs={4} style={{ width: '100%', height: '100vh', background: '#D73C36', display: 'flex', justifyContent: 'flex-end' }}>
+                <div className={styles.menuMobile}>
+                    <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
+                    <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw' }}>
+                        <span><Link href="/">Accueil</Link></span>
+                        <span><Link href="/programme">Programme</Link></span>
+                        <span><Link href="/plan-du-site">Plan du site</Link></span>
+                        <span><Link href="/contact">Contact</Link></span>
+                    </div>
+                </div>
+                <Grid className={styles.menuPC} item md={4} xs={0}>
                     <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
-                        <div style={{ width: '100%', height: '120px', backgroundColor: 'white', marginTop: 70, color: 'black' }}>
-                            <span style={{ backgroundColor: 'white', marginLeft: 50 }}>
-                                <Image src="/logoAsso.png" alt="logo association RPGaming Fest" width={100} height={100} />
-                            </span>
-                        </div>
-
                         <div style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
-                            <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Edition 2023</span>
+                            <span style={{ marginBottom: -35, fontWeight: 500, fontSize: 25, textAlign: 'end', marginRight: -40 }}><img src="/logoBlanc.png" style={{ width: '150px' }} /></span>
+                            <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Première édition</span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
@@ -35,7 +39,7 @@ export default function Programme() {
                         </div>
                     </div>
                 </Grid>
-                <Grid item xs={8} style={{ width: '100%', height: '100px' }}>
+                <Grid item md={8} xs={12}  >
                     <Box style={{ margin: 70 }}>
                         <h2 style={{ fontSize: 28 }}>Programme</h2>
                         <p style={{ marginBottom: 50 }}>Cette année, rendez-vous les samedi 21 et dimanche 22 janvier au parc des expositions à Rouen. Ouverture des portes à 8h00.</p>

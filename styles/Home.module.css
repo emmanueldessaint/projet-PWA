@@ -127,6 +127,7 @@
   border-radius: 10px;
   margin-right: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  /* width: 200px; */
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 }
 
@@ -197,8 +198,12 @@
   }
 }
 
+.testFont{
+  font-family: 'enchanted_land'
+}
+
 @font-face {
-  font-family: "font";
+  font-family: "enchanted_land";
   src: url('../public/fonts/enchanted_land-webfont.woff') format ('woff');
   font-weight: normal;
   font-style: normal;
