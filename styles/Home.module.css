@@ -112,30 +112,66 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.cardProgram{
-  background-color: rgba(0,0,0,0.04);
+.buttonEventbride {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.buttonEventbride:hover {
+  cursor: pointer;
+}
+
+.cardProgram {
+  background-color: rgba(0, 0, 0, 0.04);
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
   margin-right: 20px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 }
 
-.leftPart{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+.leftPart {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  ;
 }
 
-.cardImg{
+@media only screen and (min-width: 901px) {
+  .menuPC {
+    width: 100%;
+    height: 100vh;
+    background: #D73C36;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menuMobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .menuPC {
+    display: none;
+  }
+  .menuMobile{
+    display: flex;
+    border-bottom: 1px solid #D73C36;
+    width: 100%;
+    padding-bottom: 3px;
+  }
+}
+
+
+
+.cardImg {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
-.cardProgram:hover{
-  background-color: rgba(0,0,0,0.06);
+.cardProgram:hover {
+  background-color: rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 600px) {
@@ -146,13 +182,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
@@ -164,6 +203,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "font2";
   src: url('../public/fonts/enchanted_land-webfont.woff2') format ('woff2');

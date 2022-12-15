@@ -18,22 +18,26 @@ export default function Contact() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Grid container>
-                <Grid item xs={4} style={{ width: '100%', height: '1600px', background: '#16166e', display: 'flex', justifyContent: 'flex-end' }}>
-                    <div style={{ margin: 50, position: 'fixed', backgroundColor: '' }}>
-                        <Image src="/logoAsso.png" alt="logo association RPGaming Fest" width={100} height={100} />
-                        <h2 style={{ textAlign: 'end', color: 'white', marginBottom: 50, fontSize: 35 }}>RPGaming Fest</h2>
-                        <div style={{ display: 'flex', flexDirection: 'column', color: 'white' }}>
+                <Grid item xs={4} style={{ width: '100%', height: '100vh', background: '#D73C36', display: 'flex', justifyContent: 'flex-end' }}>
+                    <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
+                        <div style={{ width: '100%', height: '120px', backgroundColor: 'white', marginTop: 70, color: 'black' }}>
+                            <span style={{ backgroundColor: 'white', marginLeft: 50 }}>
+                                <Image src="/logoAsso.png" alt="logo association RPGaming Fest" width={100} height={100} />
+                            </span>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
                             <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Edition 2023</span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
-                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}>Plan du site</span>
+                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
                             <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/contact">Contact</Link></span>
                         </div>
                     </div>
                 </Grid>
                 <Grid item xs={8} style={{ width: '100%', height: '100px' }}>
                     <Box style={{ margin: 70 }}>
-                        <div style={{ marginBottom: 20, fontSize: 20 }}>Une question ? conactez-nous grâce à notre formulaire de contact</div>
+                        <h2 style={{ marginBottom: 20, fontSize: 28}}>Formulaire de contact</h2>
                         <div>
                             <TextField
                                 label="Prénom"
@@ -75,7 +79,7 @@ export default function Contact() {
                             />
                         </div>
                         <div>
-                            <Button variant="outlined" style={{margin: 10}}>Envoyer</Button>
+                            <Button variant="contained" style={{ margin: 10, backgroundColor: '#D73C36', color: 'white' }}>Envoyer</Button>
                         </div>
                     </Box>
                 </Grid>
