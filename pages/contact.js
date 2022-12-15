@@ -22,8 +22,7 @@ export default function Contact() {
             </Head>
             <Grid container>
                 <div className={styles.menuMobile}>
-                    <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
-                    <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
+                    <Link href="/"><img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} /></Link>                    <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
                         <span><Link href="/">Accueil</Link></span>
                         <span><Link href="/programme">Programme</Link></span>
                         <span><Link href="/plan-du-site">Plan du site</Link></span>

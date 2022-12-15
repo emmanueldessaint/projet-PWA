@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <Grid container>
         <div className={styles.menuMobile}>
-          <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
+          <Link href="/"><img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} /></Link>
           <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
             <span><Link href="/">Accueil</Link></span>
             <span><Link href="/programme">Programme</Link></span>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div style={{ textAlign: 'center', marginTop: 10 }}>Suivez nous sur Twitter, Facebook ou Linkedin pour connaître rapidement toutes les news.</div>
             <div style={{ marginTop: 100, paddingBottom: 20 }}>
-              <p style={{ fontWeight: 600, fontSize: 20 }}>Nos illustrateurs</p>
+              <p style={{ fontWeight: 600, fontSize: 20, marginBottom: -40 }}>Quelques illustrations ...</p>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={4} className={styles.cardImg}>
                   <span style={{ backgroundColor: '', border: '1px solid rgba(0,0,0,0.2)', borderRadius: 10, }}>

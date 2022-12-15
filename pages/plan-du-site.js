@@ -22,8 +22,7 @@ export default function Plandusite() {
             </Head>
             <Grid container>
                 <div className={styles.menuMobile}>
-                    <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
-                    <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
+                    <Link href="/"><img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} /></Link>                    <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
                         <span><Link href="/">Accueil</Link></span>
                         <span><Link href="/programme">Programme</Link></span>
                         <span><Link href="/plan-du-site">Plan du site</Link></span>
@@ -44,10 +43,10 @@ export default function Plandusite() {
                 </Grid>
                 <Grid item md={8} xs={12} style={{ width: '100%', height: '100px' }}>
                     <Box style={{ margin: '4vw' }}>
-                        <div style={{ marginTop: 70 }}>
+                        <div style={{ marginTop: 30 }}>
                             <h2 id="plan-du-site" className={titleFont.className} style={{ display: 'flex', color: '', fontSize: 36 }}>Plan du site</h2>
                             <img src="/plan2.jpg" alt="Plan du site" width={'100%'} />
-                            <img src="/accesParc.png" alt="Accès au parc d'exposition" width={"80%"} style={{marginLeft: '10%', marginTop: '30px'}} />
+                            <img src="/accesParc.png" alt="Accès au parc d'exposition" width={"80%"} style={{ marginLeft: '10%', marginTop: '30px' }} />
                         </div>
                     </Box>
                 </Grid>
