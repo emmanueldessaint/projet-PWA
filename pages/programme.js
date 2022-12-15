@@ -46,77 +46,91 @@ export default function Programme() {
                     <Box style={{ margin: 70 }}>
                         <h2 className={titleFont.className} style={{ fontSize: 36 }}>Programme</h2>
                         <p style={{ marginBottom: 50 }}>Cette année, rendez-vous les samedi 21 et dimanche 22 janvier au parc des expositions à Rouen. Ouverture des portes à 8h00.</p>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>08:45</div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>09:00</div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>11:30</div>
-                            <div className={styles.cardProgram}>
-                                <h3>Pause</h3>
-                                <p>Boire un coup, papoter, visiter les stands</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>Pause</h3>
+                                    <p>Boire un coup, papoter, visiter les stands</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>11:45</div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>12:30</div>
-                            <div className={styles.cardProgram}>
-                                <h3>Pause repas</h3>
-                                <p>Boire un coup, papoter, visiter les stands</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>Pause repas</h3>
+                                    <p>Boire un coup, papoter, visiter les stands</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>13:30</div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', marginBottom: 20 }}>
+                        <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>15:00</div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
-                            </div>
-                            <div className={styles.cardProgram}>
-                                <h3>lorem ispum</h3>
-                                <p>lorem ispum lorem ipsum</p>
+                            <div className={styles.cardHorizontalProgram}>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
+                                <div className={styles.cardProgram}>
+                                    <h3>lorem ispum</h3>
+                                    <p>lorem ispum lorem ipsum</p>
+                                </div>
                             </div>
                         </div>
                     </Box>
