@@ -38,7 +38,7 @@ export default function Home() {
           <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
             <div className={titleFont.className} style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
               <span style={{ marginBottom: -35, fontWeight: 500, fontSize: 25, textAlign: 'end', marginRight: -40 }}><img src="/logoBlanc.png" style={{ width: '150px' }} /></span>
-              <span  style={{ fontWeight: 700, marginBottom: 20, fontSize: 38, textAlign: 'end' }}>Première édition</span>
+              <span style={{ fontWeight: 700, marginBottom: 20, fontSize: 38, textAlign: 'end' }}>Première édition</span>
               <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
               <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
               <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
@@ -110,18 +110,20 @@ export default function Home() {
             <div className={styles.boxShadow1} style={{ width: '100%', paddingLeft: 30, paddingRight: 30, paddingTop: 10, paddingBottom: 30, marginTop: 30, borderRadius: 10 }}>
               <p style={{ fontSize: 20, fontWeight: 500, color: 'rgba(0,0,0,0.72)' }}>Renseignez votre email pour recevoir les news de RPGaming Fest</p>
               <div style={{ display: 'flex' }}>
-                <div style={{ width: '70%' }}>
-                  <TextField
-                    label="Newsletter"
-                    size="small"
-                    fullWidth
-                  />
-                </div>
-                <div style={{ width: '25%', marginLeft: '2%' }}>
-                  <Button variant="contained" style={{ fontWeight: 600, backgroundColor: '#D73C36' }} >
-                    {"S'inscrire"}
-                  </Button>
-                </div>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} sm={8}>
+                    <TextField
+                      label="Newsletter"
+                      size="small"
+                      fullWidth
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={4}>
+                    <Button variant="contained" style={{ fontWeight: 600, backgroundColor: '#D73C36' }} >
+                      {"S'inscrire"}
+                    </Button>
+                  </Grid>
+                </Grid>
               </div>
             </div>
             <div style={{ textAlign: 'center', marginTop: 10 }}>Suivez nous sur Twitter, Facebook ou Linkedin pour connaître rapidement toutes les news.</div>

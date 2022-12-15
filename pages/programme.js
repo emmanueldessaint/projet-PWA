@@ -43,7 +43,7 @@ export default function Programme() {
                     </div>
                 </Grid>
                 <Grid item md={8} xs={12}  >
-                    <Box style={{ margin: 70 }}>
+                    <Box style={{ margin: '4vw' }}>
                         <h2 className={titleFont.className} style={{ fontSize: 36 }}>Programme</h2>
                         <p style={{ marginBottom: 50 }}>Cette année, rendez-vous les samedi 21 et dimanche 22 janvier au parc des expositions à Rouen. Ouverture des portes à 8h00.</p>
                         <div style={{ display: 'flex' }}>

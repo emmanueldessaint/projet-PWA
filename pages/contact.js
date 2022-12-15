@@ -43,7 +43,7 @@ export default function Contact() {
                     </div>
                 </Grid>
                 <Grid item md={8} xs={12} style={{ width: '100%', height: '100px' }}>
-                    <Box style={{ margin: 70 }}>
+                    <Box style={{ margin: '4vw' }}>
                         <h2 className={titleFont.className} style={{ marginBottom: 20, fontSize: 36 }}>Formulaire de contact</h2>
                         <div>
                             <TextField
@@ -67,10 +67,11 @@ export default function Contact() {
                             <TextField
                                 label="Mail"
                                 variant="outlined"
-                                style={{ margin: 10, width: 350 }}
+                                style={{ margin: 10, maxWidth: 350 }}
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                                fullWidth
                             />
                         </div>
                         <div>
@@ -79,10 +80,11 @@ export default function Contact() {
                                 variant="outlined"
                                 multiline
                                 rows={4}
-                                style={{ margin: 10, width: 420 }}
+                                style={{ margin: 10, maxWidth: 350 }}
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                                fullWidth
                             />
                         </div>
                         <div>

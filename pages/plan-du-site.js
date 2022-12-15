@@ -43,19 +43,15 @@ export default function Plandusite() {
                     </div>
                 </Grid>
                 <Grid item md={8} xs={12} style={{ width: '100%', height: '100px' }}>
-                    <Box style={{ margin: 70 }}>
+                    <Box style={{ margin: '4vw' }}>
                         <div style={{ marginTop: 70 }}>
-                            <h2 id="plan-du-site" className={titleFont.className}  style={{ display: 'flex', color: '', fontSize: 36 }}>Plan du site</h2>
+                            <h2 id="plan-du-site" className={titleFont.className} style={{ display: 'flex', color: '', fontSize: 36 }}>Plan du site</h2>
                             <img src="/plan2.jpg" alt="Plan du site" width={'100%'} />
-                            <img src="/accesParc.png" alt="Accès au parc d'exposition" width={"100%"} />
+                            <img src="/accesParc.png" alt="Accès au parc d'exposition" width={"80%"} style={{marginLeft: '10%', marginTop: '30px'}} />
                         </div>
                     </Box>
                 </Grid>
             </Grid>
-
-            {/* <footer className={styles.footer}>
-        <p>Conçu par Dyme agency</p>
-      </footer> */}
         </div>
     )
 }
