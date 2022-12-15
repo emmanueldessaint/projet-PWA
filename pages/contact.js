@@ -8,6 +8,9 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { style } from '@mui/system';
 import Link from 'next/link'
+import localFont from '@next/font/local';
+
+const titleFont = localFont({ src: '../public/fonts/enchanted_land-webfont.woff' })
 
 export default function Contact() {
     return (
@@ -20,7 +23,7 @@ export default function Contact() {
             <Grid container>
                 <div className={styles.menuMobile}>
                     <img src="logoAsso2.png" width='80px' style={{ marginLeft: '2vw' }} />
-                    <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw' }}>
+                    <div className={titleFont.className} style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', marginLeft: '2vw', marginRight: '2vw', fontWeight: 500, color: '#D73C36', fontSize: '3.5vw', fontSize: '24px' }}>
                         <span><Link href="/">Accueil</Link></span>
                         <span><Link href="/programme">Programme</Link></span>
                         <span><Link href="/plan-du-site">Plan du site</Link></span>
@@ -29,19 +32,19 @@ export default function Contact() {
                 </div>
                 <Grid className={styles.menuPC} item md={4} xs={0}>
                     <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
-                        <div style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
+                        <div className={titleFont.className} style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
                             <span style={{ marginBottom: -35, fontWeight: 500, fontSize: 25, textAlign: 'end', marginRight: -40 }}><img src="/logoBlanc.png" style={{ width: '150px' }} /></span>
-                            <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Première édition</span>
-                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
-                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
-                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
-                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/contact">Contact</Link></span>
+                            <span style={{ fontWeight: 700, marginBottom: 20, fontSize: 38, textAlign: 'end' }}>Première édition</span>
+                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
+                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
+                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
+                            <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/contact">Contact</Link></span>
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={8} xs={12}  style={{ width: '100%', height: '100px' }}>
+                <Grid item md={8} xs={12} style={{ width: '100%', height: '100px' }}>
                     <Box style={{ margin: 70 }}>
-                        <h2 style={{ marginBottom: 20, fontSize: 28 }}>Formulaire de contact</h2>
+                        <h2 className={titleFont.className} style={{ marginBottom: 20, fontSize: 36 }}>Formulaire de contact</h2>
                         <div>
                             <TextField
                                 label="Prénom"

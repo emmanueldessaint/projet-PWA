@@ -36,13 +36,13 @@ export default function Home() {
         </div>
         <Grid className={styles.menuPC} item md={4} xs={0}>
           <div className={styles.leftPart} style={{ position: 'fixed', backgroundColor: '#D73C36', width: '100%', height: '100vh' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
+            <div className={titleFont.className} style={{ display: 'flex', flexDirection: 'column', color: 'white', marginRight: 50 }}>
               <span style={{ marginBottom: -35, fontWeight: 500, fontSize: 25, textAlign: 'end', marginRight: -40 }}><img src="/logoBlanc.png" style={{ width: '150px' }} /></span>
-              <span style={{ fontSize: 22, fontWeight: 700, marginBottom: 20, fontSize: 30, textAlign: 'end' }}>Première édition</span>
-              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
-              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
-              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
-              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 25, textAlign: 'end' }}><Link href="/contact">Contact</Link></span>
+              <span  style={{ fontWeight: 700, marginBottom: 20, fontSize: 38, textAlign: 'end' }}>Première édition</span>
+              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/">Accueil</Link></span>
+              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/programme">Programme</Link></span>
+              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/plan-du-site">Plan du site</Link></span>
+              <span style={{ marginBottom: 15, fontWeight: 500, fontSize: 32, textAlign: 'end' }}><Link href="/contact">Contact</Link></span>
             </div>
           </div>
         </Grid>
@@ -88,7 +88,7 @@ export default function Home() {
               <Grid item xs={12} lg={6}>
                 <div style={{ background: '' }}>
                   <div>
-                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>8 tables de jeux plus une ludothèque</h2>
+                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 32, padding: 10 }}>8 tables de jeux plus une ludothèque</h2>
                   </div>
                   <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>Une ludothèque et des espaces thématiques seront à votre disposition pour permettre de jouer une ou plusieurs parties de vos jeux favoris ou de pépites encore inconnues (Zombicide, Saboteur, Dungeons & Dragons, Civis, et pleins d’autres…)</p>
                 </div>
@@ -98,7 +98,7 @@ export default function Home() {
               <Grid item xs={12} lg={6}>
                 <div style={{ background: '' }}>
                   <div>
-                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 25, padding: 10 }}>De nombreux exposants présents sur place</h2>
+                    <h2 className={titleFont.className} style={{ display: 'flex', justifyContent: 'center', color: '#D73C36', fontSize: 32, padding: 10 }}>De nombreux exposants présents sur place</h2>
                   </div>
                   <p style={{ fontWeight: 500, marginTop: 40, textAlign: 'justify', fontSize: 21, lineHeight: 1.7, color: 'rgba(0,0,0,0.8)', padding: 10 }}>De nombreux exposants seront présents pour présenter leurs produits et services (dans la limite des stocks disponibles). Différentes conférences auront lieu durant toute la durée de l’événement et des ateliers inviteront petits et grands à créer leur premier jeu de rôle.</p>
                 </div>
