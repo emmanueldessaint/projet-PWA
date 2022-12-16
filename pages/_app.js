@@ -12,8 +12,8 @@ const myFont = localFont({ src: '../public/fonts/enchanted_land-webfont.woff' })
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main>
-    {/* <main className={poppins.className}> */}
+    // <main>
+    <main className={poppins.className}>
       <Component {...pageProps} />
     </main>
   )
