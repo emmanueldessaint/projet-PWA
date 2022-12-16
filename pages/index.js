@@ -59,12 +59,11 @@ export default function Home() {
                 </Link>
               </Grid>
               <Grid item xs={12} lg={6} style={{ textAlign: 'justify' }}>
-                <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"L’univers des jeux de rôle accessibles le temps d’un week-end !"}</p>
+                <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"L’univers des jeux de rôle accessible le temps d’un week-end !"}</p>
                 <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"Fruit de notre travail, nous sommes heureux de vous convier à la première édition du RPGaming Fest. Lieu de rencontre pour tous les grands fans du genre RPG, de nombreuses activités sont prévues pour vous divertir sans limite."} </p>
                 {/* <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"Vous êtes du genre stratège et aimez l’Univers heroic fantasy, découvrez nos séances de grands classiques tels que donjon & dragon et bien d’autres. Venez découvrir des jeux insolites tels que Zombicide Saboteur et bien d’autres "}</p> */}
-                <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"Des stands et exposants, des espaces de détente ainsi que des conférences seront notamment présents pour vous assurer une expérience complète."}</p>
+                <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"Des stands et exposants, des espaces de détente ainsi que des conférences seront notamment présentes pour vous assurer une expérience complète."}</p>
                 <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)' }}>{"On vous attend nombreux le week-end du 21 et 22 janvier 2023 au Parc des Expositions de Rouen. "}</p>
-                <p style={{ fontSize: 18, color: 'rgba(0,0,0,0.8)', marginBottom: 50 }}>La RPGaming Fest se déroulera les samedi 21 et dimanche 22 janvier au parc des expositions de Rouen.</p>
               </Grid>
             </Grid>
             <Grid container style={{ backgroundColor: '#D73C36', padding: '15px 30px 15px 30px', marginTop: 20, borderRadius: 10 }} >
@@ -128,7 +127,7 @@ export default function Home() {
             </div>
             <div style={{ textAlign: 'center', marginTop: 10 }}>Suivez nous sur Twitter, Facebook ou Linkedin pour connaître rapidement toutes les news.</div>
             <div style={{ marginTop: 100, paddingBottom: 20 }}>
-              <p style={{ fontWeight: 600, fontSize: 20, marginBottom: -10 }}>Quelques illustrations ...</p>
+              <p style={{ fontWeight: 600, fontSize: 20, marginBottom: -10 }}>Quelques illustrations faites par des exposants ...</p>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={4} className={styles.cardImg}>
                   <span style={{ backgroundColor: '', border: '1px solid rgba(0,0,0,0.2)', borderRadius: 10, }}>

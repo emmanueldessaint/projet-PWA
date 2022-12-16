@@ -45,7 +45,7 @@ export default function Programme() {
                 <Grid item md={8} xs={12}  >
                     <Box style={{ margin: '4vw' }}>
                         <h2 className={titleFont.className} style={{ fontSize: 36 }}>Programme</h2>
-                        <p style={{ marginBottom: 50 }}>Cette année, rendez-vous les samedi 21 et dimanche 22 janvier au parc des expositions à Rouen. Ouverture des portes à 8h00.</p>
+                        <p style={{ marginBottom: 50 }}>Cette année, rendez-vous les samedi 21 et dimanche 22 janvier au parc des expositions à Rouen.</p>
                         <div style={{ display: 'flex' }}>
                             <div style={{ marginRight: 20, marginTop: 20, fontSize: 20, color: 'rgba(0,0,0,0.55)', fontWeight: 600 }}>08:45</div>
                             <div className={styles.cardHorizontalProgram}>
