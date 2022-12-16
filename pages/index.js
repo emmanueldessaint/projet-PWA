@@ -73,7 +73,7 @@ export default function Home() {
                     <img src="/parcExpo.jpg" width="60px" height="60px" style={{ borderRadius: 10 }} />
                     <h2 className={titleFont.className} style={{ color: 'white', marginLeft: 20, fontSize: 28, letterSpacing: 2 }}>Première édition</h2>
                   </div>
-                  <p style={{ color: 'white', lineHeight: '160%' }}>RPGaming est présent cette année au parc des expositions à Rouen. Cette année retrouvez nous les samedi 21 et dimanche 22 janvier. </p>
+                  <p style={{ color: 'white', lineHeight: '160%' }}>RPGaming est présent cette année au parc des expositions à Rouen. Retrouvez nous le week-end du 21 et 22 janvier 2022. </p>
                 </div>
               </Grid>
               <Grid itemxs={12} md={5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
