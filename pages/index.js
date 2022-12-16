@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div style={{ textAlign: 'center', marginTop: 10 }}>Suivez nous sur Twitter, Facebook ou Linkedin pour connaître rapidement toutes les news.</div>
             <div style={{ marginTop: 100, paddingBottom: 20 }}>
-              <p style={{ fontWeight: 600, fontSize: 20, marginBottom: -40 }}>Quelques illustrations ...</p>
+              <p style={{ fontWeight: 600, fontSize: 20, marginBottom: -10 }}>Quelques illustrations ...</p>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={4} className={styles.cardImg}>
                   <span style={{ backgroundColor: '', border: '1px solid rgba(0,0,0,0.2)', borderRadius: 10, }}>
